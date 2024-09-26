@@ -1,21 +1,16 @@
-"use client"
+import { CartCounter } from "@/app/components/shoppingCart/index.";
 
-import { useState } from "react"
+export const metadata = {
+  title: "Counter",
+  description: "Counter page",
+};
 
 export default function CounterPage  () {
-  const [counter ,setCounter]  = useState(0)
+  
   return (
-    <main className="grid place-items-center">
-        <div className="flex space-x-4">
-            <button
-              onClick={() => setCounter(counter + 1)}
-            >
-              +1
-            </button>
-            <p>
-              {counter}
-            </p>
-        </div>
+    <main className="flex flex-col items-center justify-center w-full h-full">
+        <span className="font-bold">Productos en el carrito</span>
+        <CartCounter value={20} />
     </main>
   )
 }
