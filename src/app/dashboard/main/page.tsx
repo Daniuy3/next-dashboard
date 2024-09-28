@@ -1,4 +1,4 @@
-import { SimpleWidget } from "@/app/components";
+import {  WidgetsGrid } from "@/app/components";
 
 export const metadata = {
   title: "DashBoard",
@@ -14,9 +14,7 @@ export default function MainPage() {
         </h1>
         <p style={{lineHeight:1}} className="font-semibold">Informacion General</p>
       </div>
-      <div className="flex flex-wrap p-2 space-y-3">
-        <SimpleWidget />
-      </div>
+      <WidgetsGrid />
     </div>
   );
 }

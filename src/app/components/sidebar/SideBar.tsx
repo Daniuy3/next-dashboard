@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { SideBarMenuItem } from './SideBarMenuItem'
-import { pages } from '../(pages)/pages'
+import { pages } from '../../(pages)/pages'
 
 
 export const SideBar = () => {
